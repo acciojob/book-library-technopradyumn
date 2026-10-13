@@ -1,16 +1,89 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Library</title>
+  <style>
+    body {
+      background-color: #f8f8f8;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .book-library {
+      background-color: #ffffff;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .book {
+      width: 250px;
+      padding: 15px;
+      text-align: center;
+      border: 1px solid #e5e5e5;
+      border-radius: 6px;
+    }
+
+    .book img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .book .title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 12px 0 4px;
+    }
+
+    .book .author {
+      color: #777777;
+      font-size: 14px;
+      margin: 0 0 8px;
+    }
+
+    .book .price-block {
+      color: #2ecc71;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <div class="book-library">
 
+    <div class="book">
+      <img src="SPY_IN_THE_AMBER_IMAGE_LINK" alt="Spy in the Amber">
+      <p class="title">Spy in the Amber</p>
+      <p class="author">Victor O'Reilly</p>
+      <p class="price-block">$10.99</p>
+    </div>
+
+    <div class="book">
+      <img src="SACRED_GAMES_IMAGE_LINK" alt="Sacred Games">
+      <p class="title">Sacred Games</p>
+      <p class="author">Vikram Chandra</p>
+      <p class="price-block">$12.99</p>
+    </div>
+
+    <div class="book">
+      <img src="BYOMKESH_BAKSHI_IMAGE_LINK" alt="Byomkesh Bakshi">
+      <p class="title">Byomkesh Bakshi</p>
+      <p class="author">Sharadindu Bandyopadhyay</p>
+      <p class="price-block">$8.99</p>
+    </div>
+
+  </div>
 </body>
-
 </html>
